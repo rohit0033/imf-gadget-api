@@ -12,6 +12,7 @@ const boundController = {
     decommissionGadget: gadgetController.decommissionGadget.bind(gadgetController),
     selfDestructGadget: gadgetController.selfDestructGadget.bind(gadgetController),
     getConfirmationCode: gadgetController.getConfirmationCode.bind(gadgetController),
+    getGadgetById: gadgetController.getGadgetsById.bind(gadgetController)
 };
 
 // Routes for gadget API
@@ -21,5 +22,5 @@ router.patch('/gadgets/:id', boundController.updateGadget);
 router.delete('/gadgets/:id', boundController.decommissionGadget);
 router.post('/gadgets/:id/self-destruct', boundController.selfDestructGadget);
 router.get('/gadgets/:id/confirmation-code', boundController.getConfirmationCode);
-
+router.get('/gadgets/:id', boundController.getGadgetById);
 export default router;

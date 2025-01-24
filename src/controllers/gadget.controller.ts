@@ -114,6 +114,21 @@ class GadgetController {
             res.status(500).json({ success: false, error: 'Failed to self-destruct gadget' });
         }
     }
+    async getGadgetsById(req: Request, res: Response) {
+        try {
+            const { id } = req.params;
+            const gadget = await this.gadgetModel.getGadgetById(id);
+            
+            if (!gadget) {
+                return res.status(404).json({ success: false, error: 'Gadget not found' });
+            }
+
+            res.json({ success: true, data: gadget });
+        } catch (error) {
+            res.status(500).json({ success: false, error: 'Failed to fetch gadget' });
+        }
+    }
+       
 }
 
 export default GadgetController;
