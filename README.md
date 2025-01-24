@@ -1,5 +1,3 @@
-# README.md
-
 # IMF Gadget API
 
 ## Overview
@@ -51,15 +49,6 @@ The IMF Gadget API is a secure RESTful API designed to manage gadgets for the Im
    ```
    npm run start
    ```
-
-5. **Run tests**:
-   ```
-   npm run test
-   ```
-
-## API Documentation
-
-Refer to the API documentation for detailed information on the available endpoints and their usage.
 
 ## Contribution
 
