@@ -1,5 +1,3 @@
-# README.md
-
 # IMF Gadget API
 
 ## Overview
