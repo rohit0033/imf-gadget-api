@@ -4,7 +4,7 @@
   "description": "API for managing IMF gadgets",
   "main": "src/app.ts",
   "scripts": {
-    "start": "ts-node src/app.ts",
+    "start": "node dist/app.js",
     "build": "tsc",
     "dev": "nodemon src/app.ts",
     "test": "jest"
