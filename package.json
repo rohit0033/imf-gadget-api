@@ -1,11 +1,14 @@
 {
   "name": "imf-gadget-api",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "description": "API for managing IMF gadgets",
   "main": "src/app.ts",
   "scripts": {
     "start": "node dist/app.js",
-    "build": "tsc",
+    "build": "npm install -g typescript && npm install @types/node @types/express && tsc",
     "dev": "nodemon src/app.ts",
     "test": "jest"
   },
